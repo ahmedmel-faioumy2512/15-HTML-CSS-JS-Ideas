@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fill{
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    width: fit-content;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 0.25px #999;
+    position: relative;
+}
+.fill:before{
+    content: attr(data-text);
+    position: absolute;
+    left: o;
+    top: 0;
+    -webkit-text-fill-color: #0075ff;
+    transition: 0.5s;
+    width: 0;
+    overflow: hidden;
+}
+.fill:hover:before{
+    width: 100%;
+}
